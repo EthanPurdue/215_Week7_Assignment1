@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src = "petScript.js" defer></script>
+        
+    <!--Everything will be within this div-->
+    <div class="wrapper">
+            <p class="petsInfo"></p>
+            <!--This will be where the pet list ul will be displayed-->
+            <div class="petsList"></div>
+            
+            <!--This will be the div that contains the field, button, pet info and image-->
+            <div class="selectPet">
+                <label for="petNum">Pet Number:</label>
+                <input type="text" id="petNum" name="petNum" maxlength="4" size="4"></input>
+                <button onclick="showInfo()">Click for information!</button>
+                <p class="selectedPetInfo"></p>
+                <img class="selectedPetPic" alt="Pet" />
+            </div>
+        </div>
+</body>
+</html>
